@@ -1,0 +1,87 @@
+# Emotion-Based Music Recommendation System 🎵😊
+
+## Project Overview
+This is an intelligent music recommendation system that uses facial expression recognition to suggest music based on the user's emotional state. The application leverages machine learning and computer vision technologies to detect emotions and recommend personalized music.
+
+## Features
+- Real-time emotion detection using facial landmarks
+- Music recommendation based on detected emotion
+- Web application built with Streamlit
+- Machine learning model for emotion classification
+- YouTube search integration for music suggestions
+
+## Prerequisites
+- Python 3.8+
+- Webcam
+- Internet connection
+
+## Technologies Used
+- Streamlit
+- OpenCV
+- MediaPipe
+- TensorFlow/Keras
+- NumPy
+- Web Browser
+
+## Installation
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/kasalaAbhinav/Music-Recomendation-System-Based-on-Facial-Expression.git
+cd Music-Recomendation-System-Based-on-Facial-Expression
+```
+
+## Project Structure
+- `data_collection.py`: Collects emotion training data
+- `data_training.py`: Trains machine learning model
+- `evaluate_expressions.py`: Evaluates model performance
+- `Inference.py`: Real-time emotion inference
+- `music.py`: Streamlit web application
+
+## Usage Steps
+
+### 1. Collect Training Data
+```bash
+python data_collection.py
+```
+- Run for each emotion (e.g., happy, sad, angry)
+- Collect at least 100 frames per emotion
+
+### 2. Train the Model
+```bash
+python data_training.py
+```
+- Generates `model.h5` and `labels.npy`
+
+### 3. Run the Web Application
+```bash
+streamlit run app.py
+```
+
+## How It Works
+1. Open the web application
+2. Enter music language and optional singer
+3. Face the webcam to detect your emotion
+4. Click "Recommend me songs" to get YouTube recommendations
+
+## Model Performance
+- Check `confusion_matrix.png` for classification accuracy
+- View detailed metrics in `expression_metrics.txt`
+
+## Troubleshooting
+- Ensure webcam is properly connected
+- Close other applications using the webcam
+- Check Python and library versions
+
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Contact
+Abhinav Kasala
+- GitHub: @kasalaAbhinav
+- Email: abhinavkasala55@gmail.com
+
+## Acknowledgements
+- MediaPipe for landmark detection
+- TensorFlow for machine learning
+- Streamlit for web application framework
